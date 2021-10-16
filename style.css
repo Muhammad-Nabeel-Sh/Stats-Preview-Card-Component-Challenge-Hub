@@ -183,4 +183,7 @@ footer {
   .content-description {
     padding-bottom: 30px;
   }
+  figure {
+    background-image: url(/images/image-header-mobile.jpg);
+  }
 }
