@@ -51,20 +51,20 @@ Throughout this challenge, I reinforced some frontend skills :
 * Using emmet abbreviations for writing markup more efficiently 
 
 ```
-div.flex-container-outer[role="grid"]>(div.flex-container-inner[role="grid"]>div.flex-item.item-head[role="gridcell"]+div.flex-item.item-head[role="gridcell"])*3
+div.flex-container-outer[role="grid"]>(div.flex-container-inner[role="row"]>div.flex-item.item-head[role="gridcell"]+div.flex-item.item-head[role="gridcell"])*3
 ```
 
 ```html
 <div class="flex-container-outer" role="grid">
-  <div class="flex-container-inner" role="grid">
+  <div class="flex-container-inner" role="row">
     <div class="flex-item item-head" role="gridcell"></div>
     <div class="flex-item item-head" role="gridcell"></div>
   </div>
-  <div class="flex-container-inner" role="grid">
+  <div class="flex-container-inner" role="row">
     <div class="flex-item item-head" role="gridcell"></div>
     <div class="flex-item item-head" role="gridcell"></div>
   </div>
-  <div class="flex-container-inner" role="grid">
+  <div class="flex-container-inner" role="row">
     <div class="flex-item item-head" role="gridcell"></div>
     <div class="flex-item item-head" role="gridcell"></div>
   </div>
