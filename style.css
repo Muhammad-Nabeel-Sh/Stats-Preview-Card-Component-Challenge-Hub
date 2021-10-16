@@ -125,3 +125,9 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Soft-violet);
+  font-weight: 700;
+}
