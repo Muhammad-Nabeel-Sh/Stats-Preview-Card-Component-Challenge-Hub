@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
@@ -16,18 +17,46 @@
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <main>
+    <div class="content-wrapper">
+      <div class="content-text">
+    <header>
+      <h1>
+        Get <span id="insights">insights</span> that help your business grow.
+      </h1>
+    </header>
+    <div class="content-description">
+      Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.
+    </div>
+  
+    <div class="flex-container-outer">
+      <div class="flex-container-inner">
+        <div class="flex-item item-head">10k+</div>
+        <div class="flex-item item-label">companies</div>
+      </div>
+      <div class="flex-container-inner">
+        <div class="flex-item item-head">314</div>
+        <div class="flex-item item-label">templates</div>
+      </div>
+      <div class="flex-container-inner">
+        <div class="flex-item item-head">12m+</div>
+        <div class="flex-item item-label">queries</div>
+      </div>
+    </div>
+   
+    </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <div role="figure" id="content-figure">
+      <!-- <img src="/images/image-header-desktop.jpg" alt=""> -->
+    </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+    </div>
+  </main>
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>

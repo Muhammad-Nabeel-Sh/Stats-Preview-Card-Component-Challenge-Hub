@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-h: hsla(0, 0%, 100%, 0.6);
+}
+
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-size: 15pt;
+  background-color: var(--Very-dark-blue);
+  color: var(--White);
+}
+
+main {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.content-wrapper {
+  background-color: var(--Dark-desaturated-blue);
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+}
+
+.content-text {
+  padding: 60px 60px 60px 80px;
+  width: 50%;
+}
+
+h1 {
+  padding-bottom: 30px;
+  font-size: 1.5em;
+}
+
+#insights {
+  color: var(--Soft-violet);
+}
+
+.content-description {
+  font-size: 0.65em;
+  color: var(--Slightly-transparent-white-p);
+  padding-bottom: 80px;
+  line-height: 1.5;
+}
+
+.flex-container-outer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.flex-container-inner {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-transform: uppercase;
+}
+
+.item-label {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.55em;
+  color: var(--Slightly-transparent-white-h);
+}
+
+.item-head {
+  font-weight: 700;
+  font-size: 1em;
+  padding-bottom: 5px;
+}
+
+#content-figure {
+  width: 50%;
+  background-color: var(--Soft-violet);
+  background-image: url(/images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  filter: contrast(85%) brightness(120%) saturate(1.5) grayscale(0.2);
+}
+
+/* img {
+  display: block;
+  width: 100%;
+  position: relative;
+  background-color: ;
+} */
+
+/* #content-figure::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(194, 53, 53);
+} */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+}
